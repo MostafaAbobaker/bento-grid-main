@@ -31,7 +31,7 @@
       align-items: center;
       padding-block: min(2rem, 4rem);
       padding-inline: min(.5rem, 1rem);
-      font-size: 1.125rem;
+      font-size: clamp(.9rem, 4vw + 1rem, 1.125rem); 
     }
 
     img {
@@ -74,7 +74,7 @@
       color: var(--yellow-500);
     }
     .card.social img {
-      width: 200px;
+      width: 12.5rem;
       margin-block-end: 0.5rem;
     }
     .card.social p {
@@ -93,7 +93,7 @@
     .card.manage h2 {
       font-size: clamp(1rem, 4vw + 1rem, 1.8rem);;
       font-weight: 500;
-      letter-spacing: -1px;
+      letter-spacing: -0.0625rem;
       line-height: 1;
     }
 
@@ -102,12 +102,12 @@
       background-color: var(--yellow-500);
       gap: 1.5rem;
       padding-block-end: 0;
-      max-height: 250px;
+      max-height: 15.625rem;
     }
     .card.maintain h2 {
       font-size: clamp(1rem, 4vw + 1rem, 1.8rem);;
       font-weight: 500;
-      letter-spacing: -1px;
+      letter-spacing: -0.0625rem;
       line-height: 1;
     }
     .card.maintain img {
@@ -123,7 +123,7 @@
     .card.schedule h2 {
       font-size: clamp(1rem, 4vw + 1rem, 1.8rem);;
       font-weight: 500;
-      letter-spacing: -1px;
+      letter-spacing: -0.0625rem;
       line-height: 1;
       margin-block-end: 1.5rem;
       text-align: center;
@@ -151,7 +151,7 @@
     .card.grow h2 {
       font-size: clamp(1.8rem, 4vw + 1rem, 2.2rem);
       font-weight: 500;
-      letter-spacing: -1px;
+      letter-spacing: -0.0625rem;
       line-height: 1;
       text-align: center;
     }
@@ -184,7 +184,7 @@
       font-size: clamp(1.2rem, 4vw + 1rem, 2.2rem); 
       line-height: 1;
       font-weight: 500;
-      letter-spacing: -1px;
+      letter-spacing: -0.0625rem;
     }
     .card.create h2 span {
       color: var(--purple-500);
@@ -202,7 +202,7 @@
     .card.write h2 {
       font-size: clamp(1rem, 4vw + 1rem, 2rem); 
       font-weight: 500;
-      letter-spacing: -1px;
+      letter-spacing: -0.0625rem;
       line-height: 1;
     }
     .card.write img {
