@@ -65,7 +65,7 @@
       align-items: center;
     }
     .card.social h1 {
-      font-size: 3rem;
+      font-size: clamp(1.5rem, 4vw + 1rem, 3rem); 
       line-height: 1;
       font-weight: 500;
       margin-block-end: 1.5rem;
@@ -79,7 +79,7 @@
     }
     .card.social p {
       color: var(--purple-100);
-      font-size: 1.1rem;
+      font-size: clamp(.9rem, 4vw + 1rem, 1.1rem);
     }
 
     /* 2. Manage multiple */
