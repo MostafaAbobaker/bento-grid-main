@@ -30,7 +30,7 @@
       justify-content: center;
       align-items: center;
       padding: 4rem 1rem;
-      font-size: 18px;
+      font-size: 1.125rem;
     }
 
     img {
@@ -49,7 +49,7 @@
 
     .card {
       border-radius: 1.5rem;
-      padding: 2rem;
+      padding:  min(1rem, 2rem);/* 2rem; */
       overflow: hidden;
       display: flex;
       flex-direction: column;
@@ -67,7 +67,7 @@
       font-size: 3rem;
       line-height: 1;
       font-weight: 500;
-      margin-bottom: 1.5rem;
+      margin-block-end: 1.5rem;
       letter-spacing: -1px;
     }
     .card.social h1 span {
@@ -75,7 +75,7 @@
     }
     .card.social img {
       width: 200px;
-      margin-bottom: 0.5rem;
+      margin-block-end: 0.5rem;
     }
     .card.social p {
       color: var(--purple-100);
@@ -101,7 +101,7 @@
     .card.maintain {
       background-color: var(--yellow-500);
       gap: 1.5rem;
-      padding-bottom: 0;
+      padding-block-end: 0;
       max-height: 250px;
     }
     .card.maintain h2 {
@@ -125,12 +125,12 @@
       font-weight: 500;
       letter-spacing: -1px;
       line-height: 1;
-      margin-bottom: 1.5rem;
+      margin-block-end: 1.5rem;
       text-align: center;
     }
     .card.schedule img {
       width: 100%;
-      margin-bottom: 1.5rem;
+      margin-block-end: 1.5rem;
     }
     .card.schedule p {
       font-size: 1.1rem;
@@ -168,7 +168,7 @@
     }
     .card.stats p {
       font-size: 1.1rem;
-      margin-bottom: 1rem;
+      margin-block-end: 1rem;
     }
     .card.stats img {
       width: 100%;
@@ -210,7 +210,7 @@
     }
 
     /* Desktop Grid Layout */
-    @media (min-width: 900px) {
+    @media (min-width: 56.25rem) {
       .grid {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto auto auto;
@@ -226,7 +226,7 @@
       }
       .card.manage { 
         grid-area: manage; 
-        padding-right: 1rem;
+        padding-inline-end: 1rem;
       }
       .card.manage img {
         width: 120%;
@@ -251,7 +251,7 @@
         grid-area: grow; 
         flex-direction: row; 
         align-items: center; 
-        padding: 1.5rem;
+        padding: min(1rem, 1.5rem) ; /*1.5rem;*/
         gap: 1rem;
       }
       .card.grow img {
